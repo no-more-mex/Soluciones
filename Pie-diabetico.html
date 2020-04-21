@@ -92,7 +92,10 @@ lesión o ulceración del pie.</p>
 												</ul>
 											</div>
 										</div>
-										<span class="image center"><img src="images/engranes.png" alt="Factores" title="Mo More!"/></span>
+										<div class="box alt">
+										<div class="row gtr-100 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/engranes.png" alt="" /></span></div>
+</div>
 								</section>
 <hr />
 									<header>
@@ -377,48 +380,74 @@ En el caso de pacientes de alto riesgo la evaluación debe de ser al menos una v
 						</section>
 					</article>
 					<!-- CTA -->
-		<section id="cta" class="wrapper style2 special">
-						<div class="inner">
-							<header>
-							<h2>Donde Comprar?</h2>
-								<p>No te quedes sin la oportunidad de adquirir soluciones verdaderamente efectivas para el cuidado de tu piel
+						<section id="cta" class="wrapper style2 special">
+							<div class="inner">
+								<header>
+								<h2>Donde Comprar?</h2>
+								<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=MXN" data-sdk-integration-source="button-factory"></script>
+<script>
+	paypal.Buttons({
+			style: {
+					shape: 'pill',
+					color: 'black',
+					layout: 'vertical',
+					label: 'pay',
+
+			},
+			createOrder: function(data, actions) {
+					return actions.order.create({
+							purchase_units: [{
+									amount: {
+											value: '1700'
+									}
+							}]
+					});
+			},
+			onApprove: function(data, actions) {
+					return actions.order.capture().then(function(details) {
+							alert('Transaction completed by ' + details.payer.name.given_name + '!');
+					}); 
+			}
+	}).render('#paypal-button-container');
+</script>
+									<p>No te quedes sin la oprtunidad de adquirir soluciones verdaderamente efectivas para el cuidado de tu piel
+									</header>
+									</div>
+								<div class="inner">
+										<header class="major">
+									<h1><b>adquiere tu producto ya</h1> Con gusto te atenderemos!</b></p><br><p>llama al siguiente numero, o mandanos un mensaje por whatsapp.</b>
+	<b><h3><a href="#" class="icon brands fa-whatsapp"><span>8718864426</span></a></h3></b></p>
 								</header>
 								</div>
-							<div class="inner">
-									<header class="major">
-								<h1><b>adquiere tu producto ya</h1> Con gusto te atenderemos!</b></p><br><p>llama al siguiente numero, o mandanos un mensaje por whatsapp.</b>
-<b><h3><a href="https://api.whatsapp.com/send?phone=+5218718864426" class="icon brands fa-whatsapp"><span>8718864426</span></a></h3></b></p>
-							</header>
-							</div>
-						</section>
+							</section>
 
-<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-	
-							<h3>Siguenos en nuestras Redes Sociales</h3>
-							<li><a href="https://twitter.com/NoMore03115895" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=+5218718864426" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
-							<li><a href="https://web.facebook.com/No.More.cicatrices/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/no.more.mex/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UClMhLtK-5ObIj7VNWLZONQg" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-							<li><a href="mailto:no.more.mex@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Todos los derechos reservados</li><li>Elavorado por: <a href="http://nomore!.com">No More! Co.</a></li>
-						</ul>
-					</footer>
+							<!-- Footer -->
+								<footer id="footer">
+									<ul class="icons">
+										<h3>Visita nuestras Redes Sociales</h3>
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<!--li><a href="#" class="icon brands fa-TikTok"><span class="label">TikTok</span></a></li-->
+										<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
+									<ul class="copyright">
+										<li>&copy; Todos los derechos reservados</li><li>Elavorado por: <a href="http://nomore!.com">No More! Co.</a></li>
+									</ul>
+								</footer>
 
-			</div>
+						</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<!-- Scripts -->
+						<script src="assets/js/jquery.min.js"></script>
+						<script src="assets/js/jquery.scrollex.min.js"></script>
+						<script src="assets/js/jquery.scrolly.min.js"></script>
+						<script src="assets/js/browser.min.js"></script>
+						<script src="assets/js/breakpoints.min.js"></script>
+						<script src="assets/js/util.js"></script>
+						<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+				</body>
+			</html>
