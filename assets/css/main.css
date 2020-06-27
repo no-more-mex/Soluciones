@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 @import url(fontawesome-all.min.css);
 @import url(font-awesome.min.css);
-@import url(blessing.ttf);
+@font-face{
+		src: url('Soluciones/assets/webfonts/blessing.ttf');
+		src:local('blessing');
+	}
 
 
 
@@ -213,16 +216,10 @@ input, select, textarea {
 	}
 
 	h6 {
-@font-face {
 		text-transform: lowercase;
 		font-family: 'blessing';
 		font-size: 4em;
 		line-height: .6em;
-		src: url('Soluciones/assets/webfonts/blessing.ttf');
-		src:
-		local('blessing'),
-
-	}
 	}
 
 	sub {
