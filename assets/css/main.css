@@ -215,7 +215,6 @@ input, select, textarea {
 	h6 {
 		text-transform: lowercase;
 		font-family: 'blessing';
-		src:url("blessing.ttf")
 		font-size: 4em;
 		line-height: .6em;
 	}
