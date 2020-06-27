@@ -193,7 +193,7 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 336px) {
+		@media screen and (max-width: 736px) {
 
 			h3 {
 				font-size: 1em;
@@ -211,14 +211,14 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1.5em;
 	}
-
+	@media screen and (max-width: 136px){
 	h6 {
 		text-transform: lowercase;
 		font-family: 'blessing';
 		font-size: 4em;
 		line-height: .6em;
 	}
-
+}
 
 	sub {
 		font-size: 0.8em;
