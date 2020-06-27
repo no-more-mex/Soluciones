@@ -2106,17 +2106,17 @@ input, select, textarea {
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
-			top: 0.25em;
+			top: .2em;
 		}
 
 		.image.right {
 			float: right;
 			margin: 0 0 2em 2em;
-			top: 0.25em;
+			top: 0.2em;
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 45%;
 		}
 
 			.image.left img, .image.right img {
@@ -2134,8 +2134,14 @@ input, select, textarea {
 			}
 		}
 
+		.clearfix::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
 		.clearfix {
-		  overflow: auto;
+
+		  overflow:auto;
 		}
 /* List */
 
