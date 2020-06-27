@@ -211,7 +211,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1.5em;
 	}
-	@media screen and (max-width: 136px){
+	@media screen and (max-width: 636px){
 	h6 {
 		text-transform: lowercase;
 		font-family: 'blessing';
