@@ -159,7 +159,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5 {
 		color: #fff;
 		font-weight: 800;
 		letter-spacing: 0.225em;
@@ -212,9 +212,12 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.7em;
-		line-height: 1.5em;
+		text-transform: lowercase;
+		font-family: 'blessing';
+		font-size: 4em;
+		line-height: .6em;
 	}
+
 
 	sub {
 		font-size: 0.8em;
@@ -3656,7 +3659,7 @@ text-shadow: 1px 1px 2px white;
 			-ms-transition: -ms-transform 0.5s ease, opacity 1s ease;
 			transition: transform 0.5s ease, opacity 1s ease;
 			display: inline-block;
-			text-shadow: 3px 3px 6px black;
+			text-shadow: 2px 2px 4px black;
 			font-size: 2em;
 			opacity: 1;
 			padding: 0.35em 1em;
@@ -3764,7 +3767,7 @@ text-shadow: 1px 1px 2px white;
 			position: absolute;
 			left: 0;
 			top: 0;
-			opacity: .7;
+			opacity: .5;
 		}
 
 		@media screen and (max-width: 736px) {
