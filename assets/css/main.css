@@ -2135,7 +2135,18 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-		}
+
+			.image.all img {
+				-webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			   background-size: cover;
+			    height: 100%;
+			    width: 100% ;
+			  text-align: center;
+				margin: 0 0 2em 0;
+			}
+
 
 		.clearfix::after {
 		  content: "";
