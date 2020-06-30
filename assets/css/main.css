@@ -4035,11 +4035,12 @@ text-shadow: 1px 1px 2px white;
 /*imagenes jpg en todo el div*/
 
 		#cara1 {
-				background: url("/images/No More! Facial1.jpg") no-repeat fixed center;
+				background-image: url(../images/No More! Facial1.jpg);
 				-webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			   background-size: contain;
+				 background-repeat: : no-repeat;
 				 	padding: 6em 0 4em 0 ;
 			    height: 100%;
 			    width: 100% ;
