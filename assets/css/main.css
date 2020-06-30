@@ -4036,7 +4036,7 @@ text-shadow: 1px 1px 2px white;
 
 
 		#cara1 {
-				background: url("images/No More! Facial1.jpg") no-repeat fixed center;
+				background: url("/images/No More! Facial1.jpg") no-repeat fixed center;
 				-webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
