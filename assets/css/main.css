@@ -4035,16 +4035,17 @@ text-shadow: 1px 1px 2px white;
 /*imagenes jpg en todo el div*/
 
 		#cremafacial1 {
-				background:url(facial01.jpg);
-				-webkit-background-size: cover;
+			  background-image: url(../images/facial01.jpg);
+			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
-				 background-repeat: : no-repeat;
-				 	padding: 6em 0 4em 0 ;
-			    height: 100%;
-			    width: 100% ;
-			  text-align: center;
-
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  position: relative;
+			  padding: 0;
+			  margin: 0;
+			  width: 100%;
+			  height: 550px;
 			}
 /* Landing */
 	body.landing #page-wrapper {
