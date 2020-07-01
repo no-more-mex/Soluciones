@@ -4035,7 +4035,7 @@ text-shadow: 1px 1px 2px white;
 /*imagenes jpg en todo el div*/
 
 		#cremafacial1 {
-				background-image: url(No More! Facial1.jpg);
+				background:url(facial01.jpg);
 				-webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
