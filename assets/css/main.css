@@ -3305,7 +3305,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style6 {
-					background-image:url(images/facial01.jpg);
+					background-image:url("images/facial01.jpg");
 					background-repeat: no-repeat;
 					background-size: cover;
 					padding: 15px;
