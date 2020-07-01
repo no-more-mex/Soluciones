@@ -202,6 +202,33 @@ input, select, textarea {
 				font-size: 1em;
 				line-height: 1.65em;
 			}
+/*arreglo para h6*/
+@media screen and (max-width: 1680px) {
+
+	h6 {
+		text-transform: lowercase;
+		font-family: 'blessing';
+		font-size: 13pt;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+	h6 {
+		text-transform: lowercase;
+		font-family: 'blessing';
+		font-size: 12pt;
+	}
+@media screen and (max-width: 736px) {
+
+	h6 {
+		text-transform: lowercase;
+		font-family: 'blessing';
+		font-size: 1em;
+		line-height: 1.65em;
+	}
+
 
 		}
 
@@ -4035,7 +4062,7 @@ text-shadow: 1px 1px 2px white;
 /*imagenes jpg en todo el div*/
 
 		#cremafacial1 {
-			  background-image: url("images/facial01.jpg");
+			  background: url(images/facial01.jpg);
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
@@ -4060,7 +4087,7 @@ text-shadow: 1px 1px 2px white;
 		padding-top: 0;
 	}
 	body.landing #cremafacial1 {
-		background-image: url("images/facial01.jpg");
+		background: url(images/facial01.jpg);
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
