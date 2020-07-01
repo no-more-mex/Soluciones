@@ -3304,6 +3304,14 @@ input, select, textarea {
 					background-color: rgba(0, 0, 0, 0.1);
 				}
 
+				.wrapper.style6 {
+					background-image:url(images/facial01.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+					padding: 15px;
+				}
+
+
 			@media screen and (max-width: 736px) {
 
 				.wrapper.style5 .features li {
