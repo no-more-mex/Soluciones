@@ -2135,16 +2135,8 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
-		.clearfix::after {
-		  content: "";
-		  clear: both;
-		  display: table;
 		}
-		.clearfix {
 
-		  overflow:auto;
-		}
 /* List */
 
 	ol {
