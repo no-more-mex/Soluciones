@@ -214,14 +214,14 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1.5em;
 	}
-	@media screen and (max-width: 736px) {
+/* revisar porque mueve toda la fuente	@media screen and (max-width: 736px) {
 
 		h6 {
 			text-transform: lowercase;
 			font-style: "blessing";
 			font-size: 2em;
 			line-height: 1.65em;
-		}
+		}*/
 	h6 {
 		text-transform: lowercase;
 		font-family: 'blessing';
