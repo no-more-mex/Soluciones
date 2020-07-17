@@ -2124,8 +2124,6 @@ input, select, textarea {
 			margin: 0 0 3em 3em;
 			top: 0.3em;
 		}
-		}
-
 
 		.image.left {
 			float: left;
@@ -2142,12 +2140,10 @@ input, select, textarea {
 		.image.left, .image.right {
 			max-width: 20%;
 		}
-	}
 
 	.image.leftt, .image.rightt {
 		max-width: 35%;
 	}
-}
 
 		.image.leftt img, .image.rightt img {
 			width: 100%;
@@ -2165,8 +2161,7 @@ input, select, textarea {
 			.image.fit img {
 				width: 90%;
 			}
-		}
-
+		
 /* List */
 
 	ol {
