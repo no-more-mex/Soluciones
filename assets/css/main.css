@@ -2113,6 +2113,20 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image.leftt {
+			float: left;
+			margin: 0 3em 3em 0;
+			top: .3em;
+		}
+
+		.image.rightt {
+			float: right;
+			margin: 0 0 3em 3em;
+			top: 0.3em;
+		}
+		}
+
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
