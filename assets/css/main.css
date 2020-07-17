@@ -2126,21 +2126,21 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 30%;
+			max-width: 20%;
 		}
 
 			.image.left img, .image.right img {
-				width: 100%;
+				width: 90%;
 			}
 
 		.image.fit {
 			display: block;
 			margin: 0 0 3em 0;
-			width: 75%;
+			width: 70%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 90%;
 			}
 		}
 
