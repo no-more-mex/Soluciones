@@ -2128,7 +2128,16 @@ input, select, textarea {
 		.image.left, .image.right {
 			max-width: 20%;
 		}
+	}
 
+	.image.leftt, .image.rightt {
+		max-width: 35%;
+	}
+}
+
+		.image.leftt img, .image.rightt img {
+			width: 100%;
+		}
 			.image.left img, .image.right img {
 				width: 90%;
 			}
