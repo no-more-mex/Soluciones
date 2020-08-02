@@ -103,7 +103,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, select, textarea {
+	body, select, textarea {
 		color: #fff;
 		font-family: 'Julius Sans One';
 		font-size: 15pt;
@@ -114,7 +114,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			body, select, textarea {
 				font-size: 13pt;
 			}
 
@@ -122,7 +122,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			body, select, textarea {
 				font-size: 12pt;
 			}
 
@@ -130,7 +130,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			body, input, select, textarea {
+			body, select, textarea {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
 			}
@@ -2298,11 +2298,11 @@ position: relative;
   align-items: flex-start;
   width: auto;
   height: auto;
-  padding: 10px;
-  bottom: 85px;
-  right: 6px;
-  transition: .5s;
-  border-radius: 10px;
+  padding: 0px;
+  bottom: 80px;
+  right: 8px;
+  transition: 1s;
+  border-radius: 20px;
   background-color: white;
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
   -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
@@ -2311,11 +2311,11 @@ position: relative;
   animation: slideInRight .6s 0.0s both;
 }
 .popup-whatsapp > div {
-  margin: 5px;
+  margin: 10px;
 }
 @media (max-width: 680px) {
   .popup-whatsapp p {
-    font-size: 0.9em;
+    font-size: .6em;
   }
 }
 .popup-whatsapp > .content-whatsapp.-top {
@@ -2325,8 +2325,8 @@ position: relative;
 .popup-whatsapp > .content-whatsapp.-top p {
   color: #585858;
   font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 1.0em;
+  font-weight: 300;
+  font-size: 1.1em;
 }
 .popup-whatsapp > .content-whatsapp.-bottom {
   display: flex;
@@ -2337,9 +2337,9 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
-  margin: 0px 0px 15px 0px;
+  width: 60px;
+  height: 60px;
+  margin: 0px 0px 50px 0px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -2358,11 +2358,11 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #ffffff;
-  margin: 0px 0px 0px 5px;
+  margin: -10px 5px 5px 10px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -2388,10 +2388,10 @@ input.whats-input[type=text] {
   border: 0px solid #ffffff;
   border-radius: 20px;
   font-size: 1em;
-  background-color: #ffffff;
+  background-color: #b57777;
   padding: 0px 0px 0px 10px;
-  -webkit-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
   outline: none;
   transition: .3s;
 }
