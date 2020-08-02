@@ -59,6 +59,7 @@
 				target: $body,
 				visibleClass: 'is-menu-visible'
 			});
+//modal
 
 	// Header.
 		if ($banner.length > 0

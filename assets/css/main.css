@@ -2161,7 +2161,60 @@ input, select, textarea {
 			.image.fit img {
 				width: 90%;
 			}
-		
+		/*Crear ventana modal*/
+
+	.modalDialog > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+
+	.contenido {
+background-color:black;
+width:300px;
+padding: 10px 20px;
+margin: 30% auto;
+position: relative;
+	}
+
+	#cerrar {
+	    display: none;
+	}
+
+	#cerrar + label {
+	    position: fixed;
+	    color: #fff;
+	    font-size: 10px;
+	    z-index: ;
+	    background: aqua;
+	    height: 40px;
+	    width: 40px;
+	    line-height: 40px;
+	    border-radius: 50%;
+	    right: 150px;
+	    top: 150px;
+	    cursor: pointer;
+	    animation: modal 2s 3s forwards;
+	    visibility: hidden;
+	    opacity: 0;
+	}
+
+	#cerrar:checked + label, #cerrar:checked ~ .modal {
+	    display: none;
+	}
+
+	@keyframes modal {
+	    100% {
+	        visibility: visible;
+	        opacity: 1;
+	    }
+	}
 /* List */
 
 	ol {
