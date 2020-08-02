@@ -171,7 +171,7 @@ input.whats-input[type=text] {
   border: 0px solid #ffffff;
   border-radius: 20px;
   font-size: 1em;
-  background-color: #ffffff;
+  background-color: #b57777;
   padding: 0px 0px 0px 10px;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
@@ -189,7 +189,7 @@ input.whats-input::placeholder {
   opacity: 1;
 }
 input.whats-input[type=text]:focus {
-  background-color: #f8f8f8;
+  background-color: #b57777;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
   transition: .3s;
