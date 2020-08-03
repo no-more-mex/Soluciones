@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 @import url(fontawesome-all.min.css);
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face{
 		src: url('Soluciones/assets/webfonts/blessing.ttf');
 		src:local('blessing');
@@ -117,7 +116,12 @@ input, select, textarea {
 			body, select, textarea {
 				font-size: 13pt;
 			}
-
+			h6 {
+				text-transform: lowercase;
+				font-family: 'blessing';
+				font-size: 3em;
+				line-height: .6em;
+			}
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -125,7 +129,12 @@ input, select, textarea {
 			body, select, textarea {
 				font-size: 12pt;
 			}
-
+			h6 {
+				text-transform: lowercase;
+				font-family: 'blessing';
+				font-size: 2em;
+				line-height: .6em;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -134,7 +143,12 @@ input, select, textarea {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
 			}
-
+			h6 {
+				text-transform: lowercase;
+				font-family: 'blessing';
+				font-size: 1em;
+				line-height: .6em;
+			}
 		}
 
 	a {
@@ -173,7 +187,7 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h4 a, h5 a,  {
 			color: inherit;
 			text-decoration: none;
 		}
