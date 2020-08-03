@@ -95,7 +95,7 @@
   animation: slideInRight .6s 0.0s both;
 }
 .popup-whatsapp > div {
-  margin: 5px;
+  margin: 8px;
 }
 @media (max-width: 680px) {
   .popup-whatsapp p {
