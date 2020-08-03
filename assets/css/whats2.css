@@ -99,7 +99,7 @@
 }
 @media (max-width: 680px) {
   .popup-whatsapp p {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 .popup-whatsapp > .content-whatsapp.-top {
@@ -110,7 +110,7 @@
   color: #585858;
   text-align: right;
   font-family: 'Julius Sans One';
-  font-weight: 300px;
+  font-weight: 200px;
   font-size: .9em;
 }
 .popup-whatsapp > .content-whatsapp.-bottom {
