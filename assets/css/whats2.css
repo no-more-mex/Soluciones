@@ -10,7 +10,7 @@
 }
 
 //input variables
-$width-input: 250px;
+$width-input: 450px;
 $color-input: #ffffff;
 $placeholder-input: rgba(68, 68, 68, 0.705);
 $base-font-size: 1.0em;
@@ -183,7 +183,7 @@ $base-font-size: 1.0em;
 }
 
 input.whats-input[type=text] {
-  width: 250px;
+  width: 350px;
   height: 40px;
   box-sizing: border-box;
   border: 0px solid #ffffff;
