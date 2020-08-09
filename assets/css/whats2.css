@@ -34,7 +34,6 @@ $base-font-size: 1.0em;
     animation-name: pulse;
 }
 
-
 .nav-bottom {
     display: flex;
     flex-direction: row;
@@ -48,7 +47,9 @@ $base-font-size: 1.0em;
     right: 0px;
     padding: 5px;
     margin: 0px;
+  }
     @media (max-width: 360px) {
+      .nav-bottom{
         width: 320px;
     }
 }
