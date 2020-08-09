@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-@keyframes pulse {
+/*@keyframes pulse {
   0% {
     transform: scale(1, 1);
   }
@@ -54,7 +54,7 @@
   border-radius: 50%;
   background-color: none;
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-  -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
+/*  -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
 }
@@ -89,7 +89,7 @@
   border-radius: 10px;
   background-color: none;
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-  -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+/*  -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
   animation: slideInRight .6s 0.0s both;
@@ -139,6 +139,7 @@
   opacity: none;
   transition: none;
 }*/
+/*
 .send-msPopup {
   display: flex;
   justify-content: center;
@@ -180,16 +181,17 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
-@media (max-width: 420px) {
+  @media (max-width: 420px) {
   input.whats-input[type=text] {
     width: 225px;
-  }
-}
-input.whats-input::placeholder {
+    }
+    }
+  input.whats-input::placeholder {
   /* Most modern browsers support this now. */
-  color: rgba(68, 68, 68, 0.705);
+
+/*  color: rgba(68, 68, 68, 0.705);
   opacity: 1;
-}
+    }
 input.whats-input[type=text]:focus {
   background-color: #b57777;
   -webkit-transition: width 0.3s ease-in-out;
@@ -213,4 +215,230 @@ input.whats-input[type=text]:focus {
 
 .icon-font-color--nomore {
   color: #ffffff;
+}
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+@mixin shadowBox ($OffsetX, $OffsetY, $blurRadius, $spreadRadius, $colorShadow ){
+  -webkit-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+  -moz-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+  box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+}
+
+//input variables
+$width-input: 250px;
+$color-input: #ffffff;
+$placeholder-input: rgba(68, 68, 68, 0.705);
+$base-font-size: 1.0em;
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.45);
+        opacity: 0;
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 8;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 0px;
+    @media (max-width: 360px) {
+        width: 320px;
+    }
+}
+
+.whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 8;
+    transition: .3s;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    @include shadowBox( 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
+}
+
+.circle-anime {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color: rgb(119, 187, 74);
+    animation: pulse 1.2s 4.0s ease 4;
+}
+
+.popup-whatsapp {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    bottom: 85px;
+    right: 6px;
+    transition: .5s;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    @include shadowBox( 2px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
+    animation: slideInRight .6s 0.0s both;
+    &>div {
+        margin: 5px;
+    }
+    @media (max-width: 680px) {
+        p {
+            font-size: 0.9em;
+        }
+    }
+    &>.content-whatsapp {
+        &.-top {
+            display: flex;
+            flex-direction: column;
+            p {
+                color: rgb(88, 88, 88);
+                font-family: 'Julius Sans One';
+                font-weight: 400;
+                font-size: 1.0em;
+            }
+        }
+        &.-bottom {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.closePopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(247, 96, 96);
+    @include shadowBox( 1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+    &:hover {
+        background-color: rgb(247, 29, 29);
+        transition: .3s;
+    }
+}
+
+.send-msPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b57777;
+    margin: 0px 0px 0px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include shadowBox( 1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+    &:hover {
+        background-color: #f8f8f8;
+        transition: .3s;
+    }
+}
+
+.is-active-whatsapp-popup {
+    display: flex;
+    animation: slideInRight .6s 0.0s both;
+}
+
+// input style
+input {
+    &.whats-input[type=text] {
+        width: $width-input;
+        height: 40px;
+        box-sizing: border-box;
+        border: 0px solid $color-input;
+        border-radius: 20px;
+        font-size: $base-font-size;
+        background-color: $color-input;
+        padding: 0px 0px 0px 10px;
+        -webkit-transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+        outline: none;
+        transition: .3s;
+        @media (max-width: 420px) {
+            width: $width-input - 25px;
+        }
+    }
+    &.whats-input {
+        &::placeholder {
+            /* Most modern browsers support this now. */
+            color: $placeholder-input;
+            opacity: 1;
+        }
+        &[type=text]:focus {
+            background-color: #f8f8f8;
+            -webkit-transition: width 0.3s ease-in-out;
+            transition: width 0.3s ease-in-out;
+            transition: .3s;
+        }
+    }
+}
+
+.icon-whatsapp-small {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-whatsapp {
+    width: 45px;
+    height: 45px;
+}
+
+.icon-font-color{
+  color: #ffffff
+}
+
+.icon-font-color--black{
+  color: #333333
 }
