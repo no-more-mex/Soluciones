@@ -1,91 +1,78 @@
 
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-@mixin shadowBox ($OffsetX, $OffsetY, $blurRadius, $spreadRadius, $colorShadow ){
-  -webkit-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
-  -moz-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
-  box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
-}
-
-//input variables
-$width-input: 450px;
-$color-input: #ffffff;
-$placeholder-input: rgba(68, 68, 68, 0.705);
-$base-font-size: 1.0em;
-
-
 @keyframes pulse {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: scale(1.45);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
 }
-
 .pulse {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 .nav-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    width: auto;
-    height: auto;
-    position: fixed;
-    z-index: 8;
-    bottom: 0px;
-    right: 0px;
-    padding: 5px;
-    margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 8;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+@media (max-width: 360px) {
+  .nav-bottom {
+    width: 320px;
   }
-    @media (max-width: 360px) {
-      .nav-bottom{
-        width: 320px;
-    }
 }
 
 .whatsapp-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 60px;
-    height: 60px;
-    z-index: 8;
-    transition: .3s;
-    margin: 10px;
-    padding: 7px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-    @include shadowBox( 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  z-index: 8;
+  transition: .3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: none;
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+ -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
 }
 
 .circle-anime {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-content: center;
-    width: 60px;
-    height: 60px;
-    top: 15px;
-    right: 15px;
-    border-radius: 50%;
-    transition: .3s;
-    background-color: rgb(119, 187, 74);
-    animation: pulse 1.2s 4.0s ease 4;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  transition: .3s;
+  background-color: #77bb4a;
+  animation: pulse 1.2s 4.0s ease 4;
 }
 
 .popup-whatsapp {
@@ -131,7 +118,6 @@ $base-font-size: 1.0em;
   display: flex;
   flex-direction: row;
 }
-
 
 .closePopup {
  display: flex;
@@ -183,7 +169,7 @@ $base-font-size: 1.0em;
 }
 
 input.whats-input[type=text] {
-  width: 350px;
+  width: 250px;
   height: 40px;
   box-sizing: border-box;
   border: 0px solid #ffffff;
@@ -204,10 +190,9 @@ input.whats-input[type=text] {
   input.whats-input::placeholder {
   /* Most modern browsers support this now. */
 
-  color: rgba(68, 68, 68, 0.705);
+ color: rgba(68, 68, 68, 0.705);
   opacity: 1;
     }
-
 input.whats-input[type=text]:focus {
   background-color: #b57777;
   -webkit-transition: width 0.3s ease-in-out;
@@ -231,4 +216,3 @@ input.whats-input[type=text]:focus {
 
 .icon-font-color--nomore {
   color: #ffffff;
-}
