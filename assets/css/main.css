@@ -65,6 +65,14 @@ input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
+input::-o-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input::-webkit-focus-inner {
+	border: 0;
+	padding: 0;
+}
 
 input, select, textarea {
 	-moz-appearance: none;
@@ -2909,6 +2917,22 @@ position: relative;
 				}
 
 			}
+			@media screen and (max-width: 736px) {
+
+				.wrapper > .inner {
+					width: 90%;
+				}
+
+			}
+		}
+		@media screen and (max-width: 480px) {
+
+			.wrapper > .inner {
+				width: 90%;
+			}
+
+		}
+
 
 		.wrapper.alt {
 			padding: 0;
@@ -3650,6 +3674,13 @@ text-shadow: 1px 1px 2px white;
 					}
 
 				}
+				@media screen and (max-width: 480px) {
+
+					#header h1 a {
+						font-size: 0.8em;
+					}
+
+				}
 
 		#header nav {
 			height: inherit;
@@ -3883,6 +3914,13 @@ text-shadow: 1px 1px 2px white;
 				height: auto;
 				min-height: 0;
 			}
+			@media screen and (max-width: 480px) {
+
+				#banner {
+					padding: 7em 3em 5em 3em ;
+					height: auto;
+					min-height: 0;
+				}
 
 				#banner h2 {
 					font-size: 1.25em;
@@ -3988,7 +4026,7 @@ text-shadow: 1px 1px 2px white;
 /* Main */
 
 	#main > header {
-		padding: 12em 0 10em 0 ;
+		padding: 14em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -4046,6 +4084,11 @@ text-shadow: 1px 1px 2px white;
 			#main > header {
 				padding: 5em 3em 3em 3em ;
 			}
+			@media screen and (max-width: 480px) {
+
+				#main > header {
+					padding: 4em 2em 2em 2em ;
+				}
 
 				#main > header h2 {
 					font-size: 1.25em;
