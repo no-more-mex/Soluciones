@@ -38,8 +38,28 @@
     width: 320px;
   }
 }
-
 .whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  z-index: 8;
+  transition: 0.3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+  -webkit-box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
+  box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
+}
+
+/*.whatsapp-button {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -55,10 +75,12 @@
   border-radius: 50%;
   background-color: none;
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
- -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
+/* -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
 }
+*/
+
 
 .circle-anime {
   display: flex;
@@ -88,7 +110,7 @@
   right: 6px;
   transition: .5s;
   border-radius: 10px;
-  background-color: none;
+  background-color: rgb(255, 255, 255);
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
   -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
@@ -96,9 +118,10 @@
   animation: slideInRight .6s 0.0s both;
 }
 .popup-whatsapp > div {
-  margin: 8px;
+  margin: 5px;
 }
 @media (max-width: 680px) {
+
   .popup-whatsapp p {
     font-size: 0.9em;
   }
@@ -130,16 +153,17 @@
   border: none;
   outline: none;
   cursor: pointer;
-  /*background-color: #4cc370;
+  background-color: #b57777;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
-  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);*/
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
 }
-/*.closePopup:hover {
-  background-color: none;
-  opacity: none;
-  transition: none;
-}*/
+
+.closePopup:hover {
+background-color: #c57777;
+opacity: none;
+transition: none;
+}
 
 .send-msPopup {
   display: flex;
@@ -206,8 +230,8 @@ input.whats-input[type=text]:focus {
 }
 
 .icon-whatsapp {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 
 .icon-font-color {
