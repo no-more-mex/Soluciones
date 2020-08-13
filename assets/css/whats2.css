@@ -60,36 +60,14 @@ box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-  -webkit-box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
-  -moz-box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
-  box-shadow: 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705);
-}
 
-/*.whatsapp-button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 60px;
-  height: 60px;
-  z-index: 8;
-  transition: .3s;
-  margin: 10px;
-  padding: 7px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: none;
-  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-/* -webkit-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
-  -moz-box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
-  box-shadow: 1px 1px 1px 0px rgba(68, 68, 68, 0.705);
 }
-*/
-
 
 .circle-anime {
   display: flex;
@@ -158,11 +136,11 @@ box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin: 15px 0px 15px 280px;
+  background-color: #b57777;
+  margin: 15px 0px 15px 300px;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #b57777;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
@@ -182,7 +160,7 @@ transition: 0.3s;
   height: 60px;
   border-radius: 50%;
   background-color: #b57777;
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 50px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -215,7 +193,7 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
   input.whats-input[type=text] {
     width: 225px;
     }
