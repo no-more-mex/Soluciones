@@ -121,7 +121,7 @@ box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
   color: #585858;
   text-align: right;
   font-family: 'Julius Sans One';
-  font-weight: 400;
+  font-weight: 350;
   font-size: 1.0em;
 }
 .popup-whatsapp > .content-whatsapp.-bottom {
@@ -193,7 +193,7 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
-  @media (max-width: 480px) {
+  @media (max-width: 420px) {
   input.whats-input[type=text] {
     width: 225px;
     }
