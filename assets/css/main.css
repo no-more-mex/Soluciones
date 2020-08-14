@@ -132,7 +132,7 @@ input, select, textarea {
 			}
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2560px) {
 
 			body, select, textarea {
 				font-size: 12pt;
@@ -805,7 +805,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2560px) {
 
 			.row {
 				display: flex;
@@ -2848,7 +2848,7 @@ position: relative;
 			background-color: rgba(0, 0, 0, 0.75);
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2560px) {
 
 			.spotlight .image {
 				width: 45%;
@@ -2902,7 +2902,7 @@ position: relative;
 					margin: 0 auto;
 				}
 
-					@media screen and (max-width: 1280px) {
+					@media screen and (max-width: 2560px) {
 
 						.wrapper > .inner {
 							width: 90%;
@@ -4077,7 +4077,7 @@ text-shadow: 1px 1px 2px white;
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2560px) {
 
 			#main > header {
 				padding: 8em 3em 6em 3em ;
