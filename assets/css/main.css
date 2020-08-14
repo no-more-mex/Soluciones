@@ -3674,6 +3674,13 @@ text-shadow: 1px 1px 2px white;
 					}
 
 				}
+				@media screen and (max-width: 480px) {
+
+					#header h1 a {
+						font-size: 0.8em;
+					}
+
+				}
 
 		#header nav {
 			height: inherit;
@@ -3760,7 +3767,6 @@ text-shadow: 1px 1px 2px white;
 
 		display: -moz-flex;
 		display: -webkit-flex;
-		display: -o-flex;
 		display: -ms-flex;
 		display: flex;
 
@@ -3900,23 +3906,6 @@ text-shadow: 1px 1px 2px white;
 			top: 0;
 			opacity: .5;
 		}
-		@media screen and (max-width: 1260px) {
-
-			#banner {
-				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
-			}
-
-@media screen and (max-width: 980px) {
-
-	#banner {
-		padding: 7em 3em 5em 3em ;
-		height: auto;
-		min-height: 0;
-	}
-
-
 
 		@media screen and (max-width: 736px) {
 
@@ -3925,7 +3914,6 @@ text-shadow: 1px 1px 2px white;
 				height: auto;
 				min-height: 0;
 			}
-
 			@media screen and (max-width: 480px) {
 
 				#banner {
@@ -4164,26 +4152,17 @@ text-shadow: 1px 1px 2px white;
 						color: #fff;
 					}
 
-					@media screen and (max-width: 1680px) {
+				@media screen and (max-width: 480px) {
 
-						#footer .copyright li {
-							border: 0;
-							display: block;
-							line-height: 1.65em;
-							margin: 0;
-							padding: 0.5em 0;
-						}
-
+					#footer .copyright li {
+						border: 0;
+						display: block;
+						line-height: 1.65em;
+						margin: 0;
+						padding: 0.5em 0;
 					}
 
-					@media screen and (max-width: 1260px) {
-
-						#footer {
-							padding: 4em 3em 2em 3em ;
-						}
-
-					}
-
+				}
 
 		@media screen and (max-width: 980px) {
 
@@ -4200,19 +4179,13 @@ text-shadow: 1px 1px 2px white;
 			}
 
 		}
-		@media screen and (max-width: 480px) {
 
-			#footer {
-				padding: 3em 2em 1em 2em ;
-			}
-
-		}
 /* Landing */
 
 	body.landing #page-wrapper {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banners.jpg");
 		background-image: -o-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
 		background-attachment: fixed;
