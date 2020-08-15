@@ -4003,7 +4003,7 @@ text-shadow: 1px 1px 2px white;
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			max-width: 45em;
+			max-width: 60em;
 		}
 
 			#cta .inner header {
