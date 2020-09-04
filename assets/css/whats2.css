@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
@@ -42,9 +42,9 @@ box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
   padding: 5px;
   margin: 0px;
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   .nav-bottom {
-    width: 320px;
+    width: 200px;
   }
 }
 .whatsapp-button {
@@ -107,7 +107,7 @@ box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
 .popup-whatsapp > div {
   margin: 5px;
 }
-@media (max-width: 680px) {
+@media (max-width: 360px) {
 
   .popup-whatsapp p {
     font-size: 0.9em;
@@ -180,7 +180,7 @@ transition: 0.3s;
 }
 
 input.whats-input[type=text] {
-  width: 250px;
+  width: 240px;
   height: 40px;
   box-sizing: border-box;
   border: 0px solid #ffffff;
@@ -193,9 +193,9 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
   input.whats-input[type=text] {
-    width: 225px;
+    width: 230px;
     }
     }
   input.whats-input::placeholder {
