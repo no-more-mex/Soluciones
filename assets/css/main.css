@@ -155,8 +155,8 @@ input, select, textarea {
 			h6 {
 				text-transform: lowercase;
 				font-family: 'blessing';
-				font-size: 3em;
-				line-height: .6em;
+				font-size: 1.5em;
+				line-height: .3em;
 			}
 		}
 
@@ -169,8 +169,8 @@ input, select, textarea {
 			h6 {
 				text-transform: lowercase;
 				font-family: 'blessing';
-				font-size: 3em;
-				line-height: .6em;
+				font-size: 1.5em;
+				line-height: .3em;
 			}
 		}
 
@@ -183,8 +183,8 @@ input, select, textarea {
 			h6 {
 				text-transform: lowercase;
 				font-family: 'blessing';
-				font-size: 3em;
-				line-height: .6em;
+				font-size: 1.5em;
+				line-height: .3em;
 			}
 		}
 
@@ -270,8 +270,8 @@ input, select, textarea {
 	h6 {
 		text-transform: lowercase;
 		font-family: 'blessing';
-		font-size: 3em;
-		line-height: .6em;
+		font-size: 2em;
+		line-height: .4em;
 	}
 
 	sub {
@@ -4320,7 +4320,7 @@ text-shadow: 1px 1px 2px white;
 				}
 				#banner h6 {
 					font-family: 'blessing';
-					font-size: 1.0em;
+					font-size: .9em;
 				}
 				#banner br {
 					display: none;
