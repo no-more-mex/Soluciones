@@ -2068,6 +2068,14 @@ input, select, textarea {
 			margin: auto;
 		}
 
+		@media screen and (max-width: 360px) {
+
+			.box.alt{
+				border: 0;
+				padding: .7rem;
+				margin: .7rem;
+			}
+		}
 		@media screen and (max-width: 480px) {
 
 			.box.alt{
@@ -2213,8 +2221,13 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 0 2.5em 0;
 			width: 70%;
+		}
+		.image.fitcard {
+			display: block;
+			margin: 0 0 2.5em 0;
+			width: 50%;
 		}
 
 			.image.fit img {
