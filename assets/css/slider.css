@@ -10,13 +10,15 @@
 	display: block;
 	/*width: 410px
 	height: 485px*/
-	width: 340px;
-	height: 385px;
+	/*width: 340px
+	height: 385px*/
+	width: 300px;
+	height: 420px;
 	background: #ffffff;
 	position: relative;
 	border-radius: 10px;
 	box-shadow: 0;
-	transform: scale(0.80);
+	transform: scale(0.90);
 	transition: box-shadow .5s ease-in-out,
 				transform .5s ease-in-out;
 	overflow: hidden;
@@ -28,7 +30,7 @@
 .imgBox{
 	display: block;
 	margin: auto;
-	width: 50%;
+	width: 70%;
 	height: 100%;
 	overflow: hidden;
 }
