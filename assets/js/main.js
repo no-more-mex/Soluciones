@@ -7,13 +7,6 @@
 		$banner = $('#banner'),
 		$header = $('#header');
 
-//preload
-
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
-
-
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
