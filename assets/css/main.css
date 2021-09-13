@@ -2070,6 +2070,18 @@ input, select, textarea {
     opacity: .8;
 }
 
+.centro{
+	display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+
+
+
+
+
 /* Box */
 
 	.box {
